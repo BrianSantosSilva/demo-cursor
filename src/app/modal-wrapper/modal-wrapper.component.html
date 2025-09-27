@@ -1,0 +1,17 @@
+<div class="modal-overlay" *ngIf="isOpen" (click)="onBackdropClick($event)">
+  <div class="modal-container" [ngClass]="containerClasses">
+    <div class="modal-header" *ngIf="showCloseButton">
+      <button 
+        class="modal-close-btn" 
+        (click)="onClose()" 
+        aria-label="Fechar modal">
+        <span>&times;</span>
+      </button>
+    </div>
+    
+    <div class="modal-body">
+      <!-- O componente será renderizado aqui dinamicamente -->
+      <ng-container #dynamicComponent></ng-container>
+    </div>
+  </div>
+</div>

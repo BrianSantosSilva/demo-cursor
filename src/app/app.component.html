@@ -1,0 +1,52 @@
+<div class="container">
+  <header class="header">
+    <h1>🎉 Bem-vindo ao Angular 18!</h1>
+  </header>
+  
+  <main class="main-content">
+    <div class="card">
+      <h2>Hello World Angular 18</h2>
+      <p>Este é um projeto Hello World usando:</p>
+      <ul>
+        <li>Angular 18</li>
+        <li>TypeScript</li>
+        <li>SCSS</li>
+        <li>Standalone Components</li>
+        <li>ModalService com Componentes</li>
+        <li>Dynamic Component Loading</li>
+        <li>Reactive Programming</li>
+      </ul>
+      
+      <div class="modal-demo-section">
+        <h3>🎭 Demonstração de Modais com Componentes:</h3>
+        <div class="button-group">
+          <button class="btn-warning" (click)="openTestModal()">
+            🧪 Modal de Teste
+          </button>
+          <button class="btn-danger" (click)="openConfirmModal()">
+            ❓ Modal de Confirmação
+          </button>
+          <button class="btn-info" (click)="showInfoModal('Informação', 'Esta é uma modal de informação simples!', 'ℹ️')">
+            ℹ️ Modal de Informação
+          </button>
+          <button class="btn-success" (click)="openLargeInfoModal()">
+            🖥️ Modal Grande
+          </button>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button class="btn-secondary" (click)="showAlert()">
+          📢 Mostrar Alert
+        </button>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <p>Projeto criado com Angular 18 + ModalService com Componentes</p>
+  </footer>
+</div>
+
+<!-- Modal Wrapper - Renderiza componentes dinamicamente -->
+<app-modal-wrapper></app-modal-wrapper>
